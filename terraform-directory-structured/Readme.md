@@ -2,7 +2,7 @@
 This script creates 
 
 - 1 Private VPC
-- 2 Public and 2 Private Subnets per avaialability zone
+- 2 Public and 2 Private Subnets 
 - 1 NAT Gateway
 - 1 Internet Gateway
 - 1 Elastic IP for the internet gateway
