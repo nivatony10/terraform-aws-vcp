@@ -1,5 +1,5 @@
 variable "project" {
-  description = "The name of the project"
+  description = "EKS-terraform"
 }
 
 variable "environment" {
@@ -13,16 +13,18 @@ variable "region" {
 
 variable "availability_zones" {
   type        = list(any)
-  description = "The names of the availability zones to use"
+  description = "us-east-1a""
 }
 
 variable "vpc_cidr" {
   description = "The CIDR block of the vpc"
+  default     = "10.0.0.0/16"
 }
 
 variable "public_subnets_cidr" {
   type        = list(any)
-  description = "The CIDR block for the public subnet"
+  default = ["10.0.10.0/24", "10.0.20.0/24"]
+
 }
 
 variable "private_subnets_cidr" {
