@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-module "networking" {
+module "vcp" {
   source = "./modules/networking"
 
   project              = var.project
