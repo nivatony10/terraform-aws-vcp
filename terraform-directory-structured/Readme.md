@@ -7,8 +7,6 @@ This script creates
 - 1 Internet Gateway
 - 1 Elastic IP for the internet gateway
 
-![Blank diagram](https://user-images.githubusercontent.com/2060769/117240934-8f043880-ae4f-11eb-8b08-de0472bb130f.jpeg)
-
 ## task:
 
 You must use either Terraform, AWS CloudFormation or AWS CDK for all of the following tasks.
