@@ -44,3 +44,5 @@ variable "private1_subnets_cidr" {
   default = ["10.0.41.0/24", "10.0.51.0/24"]
 
 }
+
+variable "filename" {}`
