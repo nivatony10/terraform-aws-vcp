@@ -5,13 +5,13 @@ provider "aws" {
 module "vcp" {
   source = "./modules/networking"
 
-  project              = var.project
-  environment          = var.environment
-  region               = var.region
-  availability_zones   = var.availability_zones
-  vpc_cidr             = var.vpc_cidr
-  public_subnets_cidr  = var.public_subnets_cidr
-  private_subnets_cidr = var.private_subnets_cidr
-  public_subnets_cidr  = var.public_subnets_cidr
-  private_subnets_cidr = var.private_subnets_cidr
+  project               = var.project
+  environment           = var.environment
+  region                = var.region
+  availability_zones    = var.availability_zones
+  vpc_cidr              = var.vpc_cidr
+  public_subnets_cidr   = var.public_subnets_cidr
+  private_subnets_cidr  = var.private_subnets_cidr
+  public1_subnets_cidr  = var.public1_subnets_cidr
+  private1_subnets_cidr = var.private1_subnets_cidr
 }

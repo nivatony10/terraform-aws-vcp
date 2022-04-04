@@ -22,29 +22,25 @@ variable "vpc_cidr" {
 }
 
 variable "public_subnets_cidr" {
-  type        = list(any)
+  type    = list(any)
   default = ["10.0.10.0/24", "10.0.20.0/24"]
 
 }
 
 variable "private_subnets_cidr" {
-  type        = list(any)
+  type    = list(any)
   default = ["10.0.30.0/24", "10.0.40.0/24"]
 
 }
 
-}
-
-variable "public2_subnets_cidr" {
-  type        = list(any)
+variable "public1_subnets_cidr" {
+  type    = list(any)
   default = ["10.0.21.0/24", "10.0.31.0/24"]
 
 }
 
-}
-
-variable "private2_subnets_cidr" {
-  type        = list(any)
+variable "private1_subnets_cidr" {
+  type    = list(any)
   default = ["10.0.41.0/24", "10.0.51.0/24"]
 
 }
