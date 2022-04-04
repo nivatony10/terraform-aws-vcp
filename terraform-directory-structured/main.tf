@@ -22,7 +22,6 @@ module "vcp" {
   name               = var.name
   region             = var.region
   private_subnet_ids = module.vpc.private_subnet_ids
-  public_subnet_ids  = module.vpc.public_subnet_ids
   instance_type      = "t3a.large"
   public_key_name    = "deploykey"
   filename           = "${path.module}/cluster.yaml"
