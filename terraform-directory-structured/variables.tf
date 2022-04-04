@@ -8,12 +8,12 @@ variable "environment" {
 }
 
 variable "region" {
-  description = "The AWS Region"
+  description = "ap-south-1"
 }
 
 variable "availability_zones" {
   type        = list(any)
-  description = "us-east-1a""
+  description = "ap-south-1a"
 }
 
 variable "vpc_cidr" {
@@ -29,5 +29,22 @@ variable "public_subnets_cidr" {
 
 variable "private_subnets_cidr" {
   type        = list(any)
-  description = "The CIDR block for the private subnet"
+  default = ["10.0.30.0/24", "10.0.40.0/24"]
+
+}
+
+}
+
+variable "public_subnets_cidr" {
+  type        = list(any)
+  default = ["10.0.21.0/24", "10.0.31.0/24"]
+
+}
+
+}
+
+variable "private_subnets_cidr" {
+  type        = list(any)
+  default = ["10.0.41.0/24", "10.0.51.0/24"]
+
 }
