@@ -35,7 +35,7 @@ variable "private_subnets_cidr" {
 
 }
 
-variable "public_subnets_cidr" {
+variable "public2_subnets_cidr" {
   type        = list(any)
   default = ["10.0.21.0/24", "10.0.31.0/24"]
 
@@ -43,7 +43,7 @@ variable "public_subnets_cidr" {
 
 }
 
-variable "private_subnets_cidr" {
+variable "private2_subnets_cidr" {
   type        = list(any)
   default = ["10.0.41.0/24", "10.0.51.0/24"]
 
